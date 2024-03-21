@@ -1,0 +1,13 @@
+{% extends 'base' %}
+
+{% block title %}
+My Account
+{% endblock title %}
+
+
+{% block body %} 
+
+
+Welcome {{request.user}} to your Profile!
+
+{% endblock body %}

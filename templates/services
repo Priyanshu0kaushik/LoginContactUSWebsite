@@ -1,0 +1,13 @@
+{% extends 'base' %}
+
+{% block title %}
+Services
+{% endblock title %}
+
+
+{% block body %} 
+This is Services Page..
+<br>
+{% lorem 500 w %}
+
+{% endblock body %}

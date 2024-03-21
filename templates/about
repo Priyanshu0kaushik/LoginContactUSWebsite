@@ -1,0 +1,11 @@
+{% extends 'base' %}
+
+{% block title %}
+About Us
+{% endblock title %}
+
+
+{% block body %} 
+{% lorem 500 w %}
+
+{% endblock body %}

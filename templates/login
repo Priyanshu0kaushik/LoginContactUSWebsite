@@ -1,0 +1,38 @@
+{% extends 'base' %}
+{% load static %}
+
+{% block title %}
+Login
+{% endblock title %}
+
+
+{% block body %}
+
+
+<main class="form-signin row g-3 align-items-center">
+  <form method="POST">
+    {% csrf_token %}
+    <div class="text-center">
+      <img class="mb-4 rounded" src="{% static 'p.jpg' %} " alt="" width="72" height="57">
+      <h1 class="h3 mb-3 fw-normal"><strong>Please Sign In</strong></h1>
+    </div>
+
+    <div class="form-floating mb-1">
+      <input type="text" class="form-control" Required name="username" id="floatingInput" placeholder="Username">
+      <label for="inputUsername">Username</label>
+    </div>
+    <div class="form-floating">
+      <input type="password" class="form-control" Required name="password" id="floatingPassword" placeholder="Password">
+      <label for="inputPassword">Password</label>
+    </div>
+
+    <button class="w-100 btn btn-lg btn-primary mt-3" type="submit">Sign In</button>
+    <div class="text-center mt-1">
+      <a href="/signup"><button type="button" class="btn btn-link"><b>Create Account</b></a>
+    </div>
+    <p class="mt-5 mb-3 text-muted text-center">&copy; 2022</p>
+  </form>
+</main>
+
+
+{% endblock body %}
